@@ -17,6 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import com.rujirakongsomran.jc_hexcolor.ui.theme.JC_HexColorTheme
+import com.rujirakongsomran.jc_hexcolor.ui.theme.backgroundColor
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +34,7 @@ class MainActivity : ComponentActivity() {
 fun HexColorCode() {
     Column(
         modifier = Modifier
-            .background(color = "#2596be".color)
+            .background(color = MaterialTheme.colors.backgroundColor)
             .fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
